@@ -1,0 +1,72 @@
+/* i2d styles */
+
+.i2d-grid,
+.i2d-grid-img,
+.i2d-grid-drag,
+.i2d-bui,
+.i2d-bui-sq,
+.i2d-bui-img,
+.i2d-bui-drag
+{
+	position: absolute;
+}
+
+/*
+	grid: контур здания + дорога
+	img: картинки зданий
+	drag: невидимый контур перемещения зданий
+*/
+
+.i2d-grid {
+	background: #ddd url("img/grid.png") repeat top left;
+	border: 1px solid #aaa;
+	z-index: 1;
+	-webkit-transition: -webkit-transform 1s;
+	   -moz-transition: -moz-transform 1s;
+	     -o-transition: -o-transform 1s;
+	        transition: transform 1s;
+}
+
+.i2d-grid-img {
+	z-index: 2;
+}
+
+.i2d-grid-drag {
+	z-index: 3;
+}
+
+/*
+	bui: рамка + текст(если нет картинки)
+	img: картинка
+	drag: невидимый контур перемещения
+*/
+
+.i2d-bui {
+	z-index: 3;
+	background: rgba( 255, 0, 0, 0.5);
+	border: 2px solid #F00;
+	margin: 2px;
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.i2d-bui-sq {
+	z-index: 1;
+	background: rgba( 255, 0, 0, 0.5);
+	margin: 1px;
+	text-align: center;
+}
+
+.i2d-bui-drag {
+	background: rgba( 255, 0, 0, 0.5);
+	border: 1px solid #F00;
+	opacity: 1;
+}
+
+.i2d {
+	-webkit-transform: rotate(-45deg) skew(19deg, 19deg);
+	   -moz-transform: rotate(-45deg) skew(19deg, 19deg);
+	    -ms-transform: rotate(-45deg) skew(19deg, 19deg);
+	     -o-transform: rotate(-45deg) skew(19deg, 19deg);
+}

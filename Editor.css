@@ -1,0 +1,130 @@
+html, body {
+	margin: 0;
+	font: 12px "Liberation Sans", sans;
+	overflow: hidden;
+	cursor: default;
+	width: 100%;
+	height: 100%;
+	background: #EFEFEF;
+}
+
+.red {
+	font-weight: bold;
+	color: #F00;
+}
+
+#authors {
+	margin: 10px;
+	line-height: 18px;
+}
+
+.panel {
+	position: absolute;
+	z-index: 100001;
+	background: #888;
+	opacity: 0.8;
+	border-radius: 3px;
+}
+
+.scheme-text {
+	margin-top: 5px;
+	width: 350px;
+	height: 220px;
+}
+
+#panel-m1 {
+	top: 10px;
+	left: 10px;
+	width: 40px;
+	height: 688px; /* +36 */
+}
+
+#panel-m2 {
+	display: none;
+	top: 10px;
+	left: 55px;
+	padding: 0 4px 4px 0;
+	max-height: 504px;
+	overflow: auto;
+}
+
+#panel-m3 {
+	top: 10px;
+	right: 10px;
+	width: 40px;
+	height: 148px;
+}
+
+#panel-m4 {
+	display: none;
+	top: 10px;
+	right: 55px;
+	padding: 0 4px 4px 0;
+	overflow: auto;
+}
+
+#load-menu-title {
+	margin-bottom: 8px;
+	font-weight: bold;
+}
+
+#load-menu {
+	width: 372px;
+	height: 214px;
+	border: 1px solid #888;
+	overflow: auto;
+	padding: 2px 3px 3px 3px;
+}
+
+#load-menu div {
+	border: 1px solid #888;
+	margin-top: 1px;
+	padding: 5px;
+}
+
+#load-menu div span {
+	display: inline-block;
+	float: right;
+	margin-left: 8px;
+}
+
+.panel div {
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+	color: #FFF;
+	background: #555;
+	box-shadow: 0 0 2px 0 #EEE;
+	text-shadow: black 1px 1px 2px;
+	border-radius: 2px;
+	margin: 4px 0 0 4px;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+#panel-m1 div, #panel-m3 div {
+	width: 32px;
+}
+
+#panel-m2 div, #panel-m4 div {
+	padding: 0 16px;
+}
+
+#stat {
+	position: absolute;
+	z-index: 100000; /* ниже панелей на 1 */
+	bottom: 5px;
+	right: 10px;
+	text-align: right;
+}
+
+#stat span {
+	display: inline-block;
+	width: 40px;
+}
+
+.broad {
+	position: absolute;
+	opacity: 0.5;
+	z-index: 2;
+}
