@@ -1,4 +1,4 @@
-Компиляция javascript файлов:
+compile javascript:
 
 $ closure
 	--jscomp_off internetExplorerChecks
